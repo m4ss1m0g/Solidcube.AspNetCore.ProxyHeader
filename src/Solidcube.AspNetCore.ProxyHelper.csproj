@@ -2,10 +2,25 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Company>Solidcube srl</Company>
+    <Authors>mgiambona</Authors>
+    <Description>This project get a specific header (default to "X-Forwarded-Path") from the request and set the value to basePath.
+I have created this middleware for using OData Api behind a proxy for rewrite the @OData metadata tag with correct Url Path.</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/m4ss1m0g/Solidcube.AspNetCore.ProxyHeader</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/m4ss1m0g/Solidcube.AspNetCore.ProxyHeader</PackageProjectUrl>
+    <PackageIcon></PackageIcon>
+    <PackageReleaseNotes>First Release</PackageReleaseNotes>
+    <PackageTags>aspnetcore proxy odata</PackageTags>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Images\" />
   </ItemGroup>
 
 </Project>
