@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Solidcube.AspNetCore.ProxyHelper</id>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
     <title>Solidcube.AspNetCore.ProxyHelper</title>
     <authors>mgiambona</authors>
     <owners>mgiambona</owners>
@@ -13,11 +13,13 @@
     <description>
       This project get a specific header (default to "X-Forwarded-Path") from the request and set the value to basePath. I have created this middleware for using OData Api behind a proxy for rewrite the @OData metadata tag with correct Url Path.
     </description>
-    <releaseNotes>Initial Release</releaseNotes>
+    <releaseNotes>Fixed NuGet metadata</releaseNotes>
     <copyright>Copyright 2020</copyright>
-    <tags>aspnetcore proxy odata</tags>
+    <tags>aspnetcore reverseproxy proxy odata</tags>
 	<dependencies>
-      <group targetFramework="netcoreapp3.1" />
+      <group targetFramework="netcoreapp3.1">
+		<dependency id="Microsoft.AspNetCore.Http.Abstractions" version="2.2.0" />
+	  </group>
     </dependencies>
   </metadata>
   <files>
