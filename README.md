@@ -1,6 +1,6 @@
 # Solidcube.AspNetCore.ProxyHeader
 
-This project get a specific *header *(default to "**X-Forwarded-Path**") from the request and set the value to `basePath`.
+This project get a specific *header* (default to "**X-Forwarded-Path**") from the request and set the value to `basePath`.
 
 I have created this middleware for using OData Api behind a proxy for rewrite the `@OData` metadata tag with correct Url Path.
 
@@ -39,3 +39,16 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 | Url                      | Header Value | Result                           |
 | ------------------------ | ------------ | -------------------------------- |
 | http://localhost/api/foo | /commons     | http://localhost/commons/api/foo |
+
+## Example
+
+![example1](D:\Developz\Solidcube\Solidcube.AspNetCore.ProxyHelper\src\Images\Example01.png)
+
+### Simple `nginx.conf`
+
+``` apacheconf
+location /foo {
+    proxy_pass  http://localhost:7490;
+    [..]
+};
+```
