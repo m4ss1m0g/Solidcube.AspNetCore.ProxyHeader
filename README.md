@@ -42,7 +42,7 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 
 ## Example
 
-![example1](D:\Developz\Solidcube\Solidcube.AspNetCore.ProxyHelper\src\Images\Example01.png)
+![example1](/src/Images/Example01.png)
 
 ### Simple `nginx.conf`
 
